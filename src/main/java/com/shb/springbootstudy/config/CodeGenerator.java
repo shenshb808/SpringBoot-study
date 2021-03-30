@@ -31,7 +31,7 @@ public class CodeGenerator {
     private static final String PASSWORD = "123456";
     //父包模块名
     private static final String MODULENAME = "springboot-study";
-    //父包名。如果为空，将下面子包名必须写全部， 否则就只需写子包名
+    //父包名
     private static final String PARENT = "com.shb.springbootstudy";
 
 
@@ -43,7 +43,7 @@ public class CodeGenerator {
     public static String scanner(String tip) {
         Scanner scanner = new Scanner(System.in);
         StringBuilder help = new StringBuilder();
-        help.append("请输入模块名：");
+        help.append("请输入" + tip + "：");
         System.out.println(help.toString());
         if (scanner.hasNext()) {
             String ipt = scanner.next();
@@ -51,7 +51,7 @@ public class CodeGenerator {
                 return ipt;
             }
         }
-        throw new MybatisPlusException("请输入正确的模块名！");
+        throw new MybatisPlusException("请输入正确的" + tip + "！");
     }
 
     public static void main(String[] args) {

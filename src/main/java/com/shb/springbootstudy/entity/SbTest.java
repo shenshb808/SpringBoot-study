@@ -1,12 +1,17 @@
 package com.shb.springbootstudy.entity;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
+import java.time.LocalDateTime;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.apache.tomcat.jni.Local;
 
 /**
  * <p>
@@ -27,6 +32,12 @@ public class SbTest implements Serializable {
     private Integer id;
 
     private String remark;
+
+    @TableField(fill = FieldFill.INSERT)
+    private LocalDateTime createDate;
+
+    @TableField(fill = FieldFill.UPDATE)
+    private LocalDateTime updateDate;
 
 
 }

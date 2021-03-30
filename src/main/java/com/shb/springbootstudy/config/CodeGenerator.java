@@ -29,10 +29,11 @@ public class CodeGenerator {
     private static final String USERNAME = "root";
     //数据库密码
     private static final String PASSWORD = "123456";
-    //父包名。如果为空，将下面子包名必须写全部， 否则就只需写子包名
-    private static final String PARENT = "com.shb.springbootstudy";
     //父包模块名
     private static final String MODULENAME = "springboot-study";
+    //父包名。如果为空，将下面子包名必须写全部， 否则就只需写子包名
+    private static final String PARENT = "com.shb.springbootstudy";
+
 
     /**
      * <p>

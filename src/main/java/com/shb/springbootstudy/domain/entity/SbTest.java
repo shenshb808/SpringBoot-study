@@ -1,4 +1,4 @@
-package com.shb.springbootstudy.entity;
+package com.shb.springbootstudy.domain.entity;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -8,10 +8,8 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.apache.tomcat.jni.Local;
 
 /**
  * <p>

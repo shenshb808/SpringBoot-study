@@ -1,6 +1,6 @@
 package com.shb.springbootstudy.dao;
 
-import com.shb.springbootstudy.entity.SbTest;
+import com.shb.springbootstudy.domain.entity.SbTest;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

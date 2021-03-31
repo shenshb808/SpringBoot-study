@@ -1,6 +1,6 @@
 package com.shb.springbootstudy.service.impl;
 
-import com.shb.springbootstudy.entity.SbTest;
+import com.shb.springbootstudy.domain.entity.SbTest;
 import com.shb.springbootstudy.dao.SbTestMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.shb.springbootstudy.service.ISbTestService;

@@ -1,7 +1,7 @@
 package com.shb.springbootstudy.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.shb.springbootstudy.entity.SbTest;
+import com.shb.springbootstudy.domain.entity.SbTest;
 import com.shb.springbootstudy.service.ISbTestService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

@@ -85,6 +85,12 @@
             <version>3.0.2</version>
         </dependency>
 
+        <!--参数校验（SpringBoot2.3后需手动引入）-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
 
 
 

@@ -1,9 +1,13 @@
 package com.shb.springbootstudy.controller;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import com.shb.springbootstudy.domain.entity.SbTest;
+import com.shb.springbootstudy.domain.vo.Result;
+import com.shb.springbootstudy.service.ISbTestService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
@@ -14,8 +18,18 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2021-03-30
  */
 @RestController
-@RequestMapping("/sb-test")
+@RequestMapping("/sbTest")
 public class SbTestController {
+
+    @Autowired
+    private ISbTestService iSbTestService;
+
+    @PostMapping("/insert")
+    public Result insert(@Validated @RequestBody SbTest sbTest){
+        iSbTestService.save(sbTest);
+        return Result.ok();
+    }
+
 
 }
 

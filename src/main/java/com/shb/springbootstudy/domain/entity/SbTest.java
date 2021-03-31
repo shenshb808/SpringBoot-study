@@ -11,6 +11,8 @@ import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * <p>
  * 测试表
@@ -29,6 +31,7 @@ public class SbTest implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
+    @NotNull(message = "remark不得为空！")
     private String remark;
 
     @TableField(fill = FieldFill.INSERT)

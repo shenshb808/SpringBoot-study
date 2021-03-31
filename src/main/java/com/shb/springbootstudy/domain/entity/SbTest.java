@@ -8,7 +8,6 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 import com.shb.springbootstudy.constants.InsertValidate;
-import com.shb.springbootstudy.constants.UpdateValidate;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

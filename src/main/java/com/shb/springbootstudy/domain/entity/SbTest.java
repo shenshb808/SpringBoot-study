@@ -38,7 +38,7 @@ public class SbTest implements Serializable {
     @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createDate;
 
-    @TableField(fill = FieldFill.UPDATE)
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private LocalDateTime updateDate;
 
 

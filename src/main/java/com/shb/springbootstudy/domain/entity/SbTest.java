@@ -7,6 +7,8 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+import com.shb.springbootstudy.constants.InsertValidate;
+import com.shb.springbootstudy.constants.UpdateValidate;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -31,7 +33,7 @@ public class SbTest implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    @NotNull(message = "remark不得为空！")
+    @NotNull(message = "remark不得为空！",groups = InsertValidate.class)
     private String remark;
 
     @TableField(fill = FieldFill.INSERT)

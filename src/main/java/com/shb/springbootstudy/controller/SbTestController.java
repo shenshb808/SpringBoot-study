@@ -1,6 +1,7 @@
 package com.shb.springbootstudy.controller;
 
 
+import com.shb.springbootstudy.constants.InsertValidate;
 import com.shb.springbootstudy.domain.entity.SbTest;
 import com.shb.springbootstudy.domain.vo.Result;
 import com.shb.springbootstudy.service.ISbTestService;
@@ -25,7 +26,7 @@ public class SbTestController {
     private ISbTestService iSbTestService;
 
     @PostMapping("/insert")
-    public Result insert(@Validated @RequestBody SbTest sbTest){
+    public Result insert(@Validated(value = {InsertValidate.class}) @RequestBody SbTest sbTest){
         iSbTestService.save(sbTest);
         return Result.ok();
     }
